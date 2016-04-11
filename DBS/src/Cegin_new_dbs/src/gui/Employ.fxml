@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.EmployControler">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="4.0" prefHeight="650.0" prefWidth="600.0">
+         <children>
+            <Label alignment="CENTER" layoutX="32.0" layoutY="76.0" prefHeight="17.0" prefWidth="217.0" text="Pridanie zamestnanca" textFill="#5f7c4f">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtFirstName" layoutX="66.0" layoutY="127.0" promptText="Krstné meno" />
+            <TextField fx:id="txtLastName" layoutX="67.0" layoutY="158.0" promptText="Priezvisko" />
+            <ComboBox fx:id="comboBoxPosition" layoutX="66.0" layoutY="220.0" prefWidth="150.0" promptText="Pracovná pozícia" />
+            <Button fx:id="btnAdd" layoutX="66.0" layoutY="250.0" mnemonicParsing="false" onAction="#btnAddAction" prefHeight="31.0" prefWidth="150.0" text="Pridať">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Label alignment="CENTER" layoutX="338.0" layoutY="76.0" prefHeight="31.0" prefWidth="230.0" text="Priradenie zamestnanca" textFill="#5f7c4f">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnActual" layoutX="371.0" layoutY="221.0" mnemonicParsing="false" onAction="#btnActualAction" prefHeight="31.0" prefWidth="150.0" text="Priraď">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <TextArea fx:id="txtAreaLog" layoutX="67.0" layoutY="307.0" prefHeight="245.0" prefWidth="455.0" />
+            <TextField fx:id="txtPayment" layoutX="66.0" layoutY="189.0" promptText="Plat" />
+            <TextField fx:id="txtIDplace" layoutX="374.0" layoutY="157.0" promptText="ID miesta" />
+            <TextField fx:id="txtIDemploy" layoutX="373.0" layoutY="127.0" promptText="ID zamestnanca" />
+            <ComboBox fx:id="comboBoxWhere" layoutX="371.0" layoutY="189.0" prefWidth="150.0" promptText="Vyber miesta" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

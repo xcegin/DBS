@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="app.TraktorControler">
+   <children>
+      <AnchorPane layoutX="15.0" layoutY="12.0" prefHeight="650.0" prefWidth="600.0">
+         <children>
+            <Label alignment="CENTER" layoutX="130.0" layoutY="75.0" prefHeight="31.0" prefWidth="340.0" text="Priradenie traktora zamestnancovi" textFill="#5f7c4f">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtIDtractor" layoutX="220.0" layoutY="162.0" promptText="ID traktora" />
+            <Button fx:id="btnAdd" layoutX="218.0" layoutY="196.0" mnemonicParsing="false" onAction="#btnAddAction" prefHeight="31.0" prefWidth="150.0" text="Pridať">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <TextArea fx:id="txtAreaLog" layoutX="67.0" layoutY="307.0" prefHeight="245.0" prefWidth="455.0" />
+            <TextField fx:id="txtIDemploy" layoutX="220.0" layoutY="127.0" promptText="ID zamestnanca" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

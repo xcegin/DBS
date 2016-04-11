@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.LoginControler">
+   <children>
+      <AnchorPane layoutY="-15.0" prefHeight="650.0" prefWidth="600.0">
+         <children>
+            <TextField fx:id="usernameField" layoutX="205.0" layoutY="140.0" promptText="Meno" />
+            <PasswordField id="txtPass" fx:id="pswdField" layoutX="205.0" layoutY="179.0" promptText="Heslo" />
+            <Button id="btnLogin" fx:id="btnLogin" layoutX="229.0" layoutY="226.0" mnemonicParsing="false" onAction="#btnLoginAction" prefHeight="25.0" prefWidth="100.0" text="Login">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Label fx:id="lb1Message" alignment="CENTER" layoutX="207.0" layoutY="113.0" prefHeight="17.0" prefWidth="149.0" text="Prihláste sa" textFill="#5b8365">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Button fx:id="btnRegistration" layoutX="230.0" layoutY="262.0" mnemonicParsing="false" onAction="#btnRegistrationAction" prefHeight="30.0" prefWidth="100.0" text="Zmena hesla">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Label fx:id="statusLabel" alignment="CENTER" layoutX="160.0" layoutY="317.0" prefHeight="17.0" prefWidth="239.0" textAlignment="CENTER" textFill="#e14242" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

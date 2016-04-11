@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.MenuBar?>
+
+<MenuBar prefHeight="25.0" prefWidth="335.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.MenuControl">
+  <menus>
+    <Menu mnemonicParsing="false" text="Zvierata">
+      <items>
+        <MenuItem fx:id="menuFind" mnemonicParsing="false" onAction="#menuAddAction" text="Pridanie a Nájdenie" />
+            <MenuItem fx:id="menuDelete" mnemonicParsing="false" onAction="#menuDeleteAction" text="Odstránenie a Aktualizácia" />
+      </items>
+    </Menu>
+    <Menu mnemonicParsing="false" text="Štatistiky">
+      <items>
+        <MenuItem fx:id="menuStatistic" mnemonicParsing="false" onAction="#menuStatisticsAction" text="Zobraziť štatistiky" />
+      </items>
+    </Menu>
+      <Menu mnemonicParsing="false" text="Zamestnanci">
+        <items>
+          <MenuItem fx:id="menuEmploy" mnemonicParsing="false" onAction="#menuEmployAction" text="Pridať a Priradiť" />
+        </items>
+      </Menu>
+      <Menu mnemonicParsing="false" text="Pracovne zaznamy">
+         <items>
+            <MenuItem fx:id="menuPlant" mnemonicParsing="false" onAction="#menuPlantAction" text="Najdenie" />
+         </items></Menu>
+      <Menu mnemonicParsing="false" text="Hľadanie">
+      <items>
+      <MenuItem fx:id="menuSearch" mnemonicParsing="false" onAction="#menuFindAction" text="Zamestnanci"/>
+      </items>
+        </Menu>
+        
+        <Menu mnemonicParsing="false" text="Traktory">
+      <items>
+      <MenuItem fx:id="menuTraktor" mnemonicParsing="false" onAction="#menuTraktorAction" text="Priradenie"/>
+      </items>
+        </Menu>
+        
+        
+        <Menu mnemonicParsing="false" text="Koniec">
+      <items>
+      <MenuItem fx:id="menuKoniec" mnemonicParsing="false" onAction="#menuKoniecAction" text="Koniec"/>
+      </items>
+        </Menu>
+        
+  </menus>
+</MenuBar>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.PlantControler">
+   <children>
+      <AnchorPane layoutX="5.0" layoutY="2.0" prefHeight="650.0" prefWidth="600.0">
+         <children>
+            <Label alignment="CENTER" layoutX="138.0" layoutY="75.0" prefHeight="31.0" prefWidth="310.0" text="Nájdenie záznamu o priradení" textFill="#5f7c4f">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtFind" layoutX="220.0" layoutY="162.0" promptText="ID zamestnanca" />
+            <Button fx:id="btnFind" layoutX="218.0" layoutY="196.0" mnemonicParsing="false" onAction="#btnFindAction" prefHeight="31.0" prefWidth="150.0" text="Pridať">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <TextArea fx:id="txtAreaLog" layoutX="67.0" layoutY="307.0" prefHeight="245.0" prefWidth="455.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

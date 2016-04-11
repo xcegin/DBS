@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.StatisticsControler">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="4.0" prefHeight="650.0" prefWidth="600.0">
+         <children>
+            <Label alignment="CENTER" layoutX="62.0" layoutY="75.0" prefHeight="31.0" prefWidth="466.0" text="Zobrazenie Štatistiky pre Zvieratá" textFill="#5f7c4f">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="comboBoxStatistic" layoutX="143.0" layoutY="128.0" prefHeight="25.0" prefWidth="291.0" promptText="Zobraziť štatistiku" />
+            <Button fx:id="btnShow" layoutX="214.0" layoutY="168.0" mnemonicParsing="false" onAction="#btnShowAction" prefHeight="31.0" prefWidth="150.0" text="Zobraz">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <TextArea fx:id="txtAreaLog" layoutX="67.0" layoutY="261.0" prefHeight="291.0" prefWidth="455.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

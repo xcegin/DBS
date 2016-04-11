@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.RegistrationControler">
+   <children>
+      <TextField fx:id="txtUserName" layoutX="201.0" layoutY="94.0" promptText="Používateľ" />
+      <PasswordField fx:id="txtOldPasswd" layoutX="202.0" layoutY="128.0" promptText="Staré Heslo" />
+      <PasswordField fx:id="txtNewPasswd" layoutX="201.0" layoutY="161.0" promptText="Nové Heslo" />
+      <Label layoutX="223.0" layoutY="55.0" text="Zmena hesla" textFill="#326f31">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnRegistration" layoutX="224.0" layoutY="203.0" mnemonicParsing="false" onAction="#btnRegistrationAction" prefHeight="32.0" prefWidth="106.0" text="Zmeň heslo" />
+      <Label fx:id="labelStat" layoutX="149.0" layoutY="280.0" prefHeight="17.0" prefWidth="254.0" textAlignment="CENTER" textFill="#ab2828" />
+      <Button fx:id="btnLogin" layoutX="223.0" layoutY="240.0" mnemonicParsing="false" onAction="#btnLoginAction" prefHeight="32.0" prefWidth="106.0" text="Naspäť na Login" />
+   </children>
+</AnchorPane>

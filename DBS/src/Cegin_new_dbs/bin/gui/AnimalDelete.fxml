@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.AnimalDeleteControler">
+   <children>
+      <AnchorPane prefHeight="650.0" prefWidth="600.0">
+         <children>
+            <Label alignment="CENTER" layoutX="32.0" layoutY="76.0" prefHeight="17.0" prefWidth="217.0" text="Odstranenie zvieraťa" textFill="#5f7c4f">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtWeight" layoutX="66.0" layoutY="127.0" promptText="Vaha väčšia ako" />
+            <ComboBox fx:id="comboBoxType" layoutX="67.0" layoutY="163.0" prefWidth="150.0" promptText="Druh zvieraťa" />
+            <Button fx:id="btnDelete" layoutX="67.0" layoutY="199.0" mnemonicParsing="false" onAction="#btnDeleteAction" prefHeight="31.0" prefWidth="150.0" text="Odstrániť">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Label alignment="CENTER" layoutX="295.0" layoutY="76.0" prefHeight="31.0" prefWidth="283.0" text="Priradenie zvieraťa do chlieva" textFill="#5f7c4f">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtZvieraID" layoutX="373.0" layoutY="127.0" promptText="ID zvierata" />
+            <TextField fx:id="txtChlievID" layoutX="372.0" layoutY="163.0" prefHeight="25.0" prefWidth="149.0" promptText="ID chlieva" />
+            <Button fx:id="btnActual" layoutX="372.0" layoutY="199.0" mnemonicParsing="false" onAction="#btnActualAction" prefHeight="31.0" prefWidth="150.0" text="Aktualizovať">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <TextArea fx:id="txtAreaLog" layoutX="67.0" layoutY="307.0" prefHeight="245.0" prefWidth="455.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

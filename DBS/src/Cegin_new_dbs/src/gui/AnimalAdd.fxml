@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.AnimalAddControler">
+   <children>
+      <AnchorPane layoutY="7.0" prefHeight="650.0" prefWidth="600.0">
+         <children>
+
+            <Label alignment="CENTER" layoutX="32.0" layoutY="76.0" prefHeight="17.0" prefWidth="217.0" text="Pridanie zvieraťa" textFill="#5f7c4f">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtAnimalName" layoutX="66.0" layoutY="115.0" promptText="Meno zvieraťa" />
+            <TextField fx:id="txtWeight" layoutX="66.0" layoutY="149.0" promptText="Váha" />
+            <ComboBox fx:id="comboBoxType" layoutX="66.0" layoutY="216.0" prefWidth="150.0" promptText="Druh zvieraťa" />
+            <Button fx:id="btnAdd" layoutX="66.0" layoutY="249.0" mnemonicParsing="false" onAction="#btnAddAction" prefHeight="31.0" prefWidth="150.0" text="Pridať">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Label alignment="CENTER" layoutX="338.0" layoutY="76.0" prefHeight="17.0" prefWidth="217.0" text="Nájsť zvieratá" textFill="#5f7c4f">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtAnimalSearchName" layoutX="372.0" layoutY="115.0" promptText="Meno zvieraťa" />
+            <ComboBox fx:id="comboBoxTypeSearch" layoutX="372.0" layoutY="182.0" prefWidth="150.0" promptText="Druh zvieraťa" />
+            <Button fx:id="btnSearch" layoutX="372.0" layoutY="213.0" mnemonicParsing="false" onAction="#btnSearchAction" prefHeight="31.0" prefWidth="150.0" text="Nájdi">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <TextArea fx:id="txtAreaLog" layoutX="67.0" layoutY="307.0" prefHeight="245.0" prefWidth="455.0" />
+            <ComboBox fx:id="comboBoxHungry" layoutX="66.0" layoutY="182.0" prefWidth="150.0" promptText="Hladné" />
+            <ComboBox fx:id="comboBoxHungrySearch" layoutX="371.0" layoutY="149.0" prefWidth="150.0" promptText="Hladné" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
